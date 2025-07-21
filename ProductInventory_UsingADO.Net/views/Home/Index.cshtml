@@ -1,0 +1,78 @@
+﻿@{
+    ViewBag.Title = "Dashboard - Home";
+}
+
+<section class="container py-5">
+    <!-- Hero Banner -->
+    <div class="bg-light rounded-4 p-5 mb-5 shadow-sm text-center">
+        <h1 class="display-5 fw-bold text-dark mb-3">Welcome to <span class="text-warning">Product Inventory System</span></h1>
+        <p class="lead text-muted mb-4">
+            Your smart and simple solution to manage product data, track inventory, and update pricing efficiently.
+        </p>
+        <a href="@Url.Action("Index", "Product")" class="btn btn-dark btn-lg px-4 rounded-pill shadow-sm">
+            <i class="fas fa-box-open me-2"></i>View Products
+        </a>
+    </div>
+
+    <!-- Quick Access Cards -->
+    <div class="row text-center g-4 mb-5">
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm bg-white rounded-4">
+                <div class="card-body py-4">
+                    <i class="fas fa-box fa-3x text-warning mb-3"></i>
+                    <h5 class="fw-bold">Manage Products</h5>
+                    <p class="text-muted small">Add, update, or remove products from the system easily.</p>
+                    <a href="@Url.Action("Index", "Product")" class="btn btn-outline-dark btn-sm rounded-pill">Go to Inventory</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm bg-white rounded-4">
+                <div class="card-body py-4">
+                    <i class="fas fa-chart-line fa-3x text-success mb-3"></i>
+                    <h5 class="fw-bold">Inventory Overview</h5>
+                    <p class="text-muted small">Visualize stock performance, price ranges, and trends (coming soon).</p>
+                    <a href="@Url.Action("About", "Home")" class="btn btn-outline-dark btn-sm rounded-pill">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm bg-white rounded-4">
+                <div class="card-body py-4">
+                    <i class="fas fa-user-shield fa-3x text-danger mb-3"></i>
+                    <h5 class="fw-bold">Admin Features</h5>
+                    <p class="text-muted small">Built-in CRUD, security options, and custom extensions.</p>
+                    <a href="@Url.Action("Contact", "Home")" class="btn btn-outline-dark btn-sm rounded-pill">Contact Support</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional Stats (dummy for now) -->
+    <div class="row g-4">
+        <div class="col-md-3 col-6">
+            <div class="bg-white shadow-sm rounded-4 p-3 text-center border-top border-4 border-warning">
+                <h2 class="fw-bold text-dark mb-0">45</h2>
+                <small class="text-muted">Total Products</small>
+            </div>
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="bg-white shadow-sm rounded-4 p-3 text-center border-top border-4 border-success">
+                <h2 class="fw-bold text-dark mb-0">12</h2>
+                <small class="text-muted">Low Stock</small>
+            </div>
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="bg-white shadow-sm rounded-4 p-3 text-center border-top border-4 border-danger">
+                <h2 class="fw-bold text-dark mb-0">$3,200</h2>
+                <small class="text-muted">Inventory Value</small>
+            </div>
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="bg-white shadow-sm rounded-4 p-3 text-center border-top border-4 border-info">
+                <h2 class="fw-bold text-dark mb-0">7</h2>
+                <small class="text-muted">Recently Added</small>
+            </div>
+        </div>
+    </div>
+</section>
